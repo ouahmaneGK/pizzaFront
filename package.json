@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "serve ./dist --single",
+    "start": "serve ./dist/pizzaWeb --single",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

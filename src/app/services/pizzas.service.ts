@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { APP_ID, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Pizza } from '../model/pizza.model';
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { Pizza } from '../model/pizza.model';
   
 export class PizzasService {
 
-  public host: string = "http://localhost:3000/api/pizzas";
+  public host: string = environment.apiUrl;
   
   constructor(private httpClient:HttpClient) { }
   
